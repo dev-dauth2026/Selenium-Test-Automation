@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-02T22:34:44 AEST" name="Failed suite [Default suite]" finished-at="2025-03-02T22:36:47 AEST" duration-ms="123185">
+    <groups>
+    </groups>
+    <test started-at="2025-03-02T22:34:44 AEST" name="Default test(failed)" finished-at="2025-03-02T22:36:47 AEST" duration-ms="123185">
+      <class name="com.ecommerce.tests.HomePageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.HomePageTest@470734c3]" started-at="2025-03-02T22:34:44 AEST" name="setup" finished-at="2025-03-02T22:35:20 AEST" duration-ms="36003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.HomePageTest@470734c3]" started-at="2025-03-02T22:35:20 AEST" name="initialize" finished-at="2025-03-02T22:35:20 AEST" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="verifyHeaderNavigationLinks()[pri:3, instance:com.ecommerce.tests.HomePageTest@470734c3]" started-at="2025-03-02T22:35:20 AEST" name="verifyHeaderNavigationLinks" finished-at="2025-03-02T22:36:47 AEST" duration-ms="86669" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHeaderNavigationLinks -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.HomePageTest@470734c3]" started-at="2025-03-02T22:36:47 AEST" name="teardown" finished-at="2025-03-02T22:36:47 AEST" duration-ms="393" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.ecommerce.tests.HomePageTest -->
+    </test> <!-- Default test(failed) -->
+  </suite> <!-- Failed suite [Default suite] -->
+</testng-results>
