@@ -39,6 +39,14 @@
             <artifactId>extentreports</artifactId>
             <version>5.0.9</version>
         </dependency>
+        
+        <!-- https://mvnrepository.com/artifact/io.github.cdimascio/java-dotenv -->
+        <dependency>
+		    <groupId>io.github.cdimascio</groupId>
+		    <artifactId>java-dotenv</artifactId>
+		    <version>5.2.2</version>
+		</dependency>
+
     </dependencies>
 
     <build>
@@ -55,5 +63,7 @@
             </plugin>
         </plugins>
     </build>
+    
+    
 
 </project>

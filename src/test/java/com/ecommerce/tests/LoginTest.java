@@ -1,50 +1,87 @@
 package com.ecommerce.tests;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class LoginTest {
-    WebDriver driver;
+import com.ecommerce.pages.LoginPage;
+import com.ecommerce.utils.EnvReader;
+
+public class LoginTest extends BaseTest {
+    LoginPage loginPage;
+    String email = EnvReader.getEnv("LOGIN_EMAIL");
+    String password = EnvReader.getEnv("LOGIN_PASSWORD");
 
     @BeforeMethod
-    public void setup() {
-        // Setup ChromeDriver using WebDriverManager
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
-
-        // Open the website
-        driver.get("https://automationexercise.com/login");
+    public void initialize() {
+        loginPage = new LoginPage(driver);
+        
+        loginPage.gotoLoginPage();
     }
 
-    @Test
-    public void testLogin() {
-        // Enter email
-        WebElement emailField = driver.findElement(By.xpath("//input[@data-qa='login-email']"));
-        emailField.sendKeys("your-email@example.com");
+    /**
+     * Test Case: Verify user can log in with valid credentials.
+     */
+    @Test(priority = 1)
+    public void testValidLogin() {
+    	
+        loginPage.enterLoginEmail(EnvReader.getEnv("LOGIN_EMAIL"));
+        loginPage.enterLoginPassword(EnvReader.getEnv("LOGIN_PASSWORD"));
+        loginPage.clickLogin();
+        Assert.assertTrue(loginPage.isLogoutButtonDisplayed(),"Login failed with valid credentials!");
+        Assert.assertFalse(loginPage.isLoginErrorDisplayed(), "Login failed with valid credentials!");
 
-        // Enter password
-        WebElement passwordField = driver.findElement(By.xpath("//input[@data-qa='login-password']"));
-        passwordField.sendKeys("yourpassword");
-
-        // Click login button
-        WebElement loginButton = driver.findElement(By.xpath("//button[@data-qa='login-button']"));
-        loginButton.click();
-
-        // Verify user is logged in by checking the logout button
-        WebElement logoutButton = driver.findElement(By.xpath("//a[contains(text(),'Logout')]"));
-        Assert.assertTrue(logoutButton.isDisplayed(), "Login failed!");
     }
 
-    @AfterMethod
-    public void teardown() {
-        driver.quit();
+    /**
+     * Test Case: Verify error message is displayed for invalid login.
+     */
+
+  
+    @Test(priority = 2, dataProvider = "invalidLoginData")
+    public void testInvalidLogin(String email, String password) {
+        loginPage.enterLoginEmail(email);
+        loginPage.enterLoginPassword(password);
+        loginPage.clickLogin();
+
+        // Retrieve actual error message from UI after login attempt
+        String actualErrorMessage = loginPage.getLoginErrorMessage();
+
+        // Debug log
+        System.out.println("Actual Error Message: " + actualErrorMessage);
+
+        // Validate that an error message is displayed
+        Assert.assertTrue(loginPage.isLoginErrorDisplayed(), "Expected error message not displayed!");
+
+        // Ensure error message is not empty
+        Assert.assertFalse(actualErrorMessage.isEmpty(), "Error message should not be empty!");
+    }
+
+
+    @DataProvider(name = "invalidLoginData")
+    public Object[][] invalidLoginData() {
+        return new Object[][]{
+            {"invaliduser@gmail.com", EnvReader.getEnv("LOGIN_PASSWORD")},  // Invalid email
+            {EnvReader.getEnv("LOGIN_EMAIL"), "wrongpassword"}  // Invalid password
+        };
+    }
+
+   
+
+    /**
+     * Test Case: Verify error message is displayed when trying to login with empty field.
+     */
+    @Test(priority = 3)
+    public void emptyInputField() {
+        loginPage.enterLoginEmail("");
+        loginPage.enterLoginPassword(""); // Empty field
+        loginPage.clickLogin();
+        Assert.assertTrue(driver.getCurrentUrl().contains("login"), "Login failed with empty field");
+     // Check that browser validation is triggered for both fields
+        Assert.assertTrue(loginPage.isFieldRequired(loginPage.loginEmailField),
+                "Login Email field did not trigger required validation!");
+
+        
     }
 }

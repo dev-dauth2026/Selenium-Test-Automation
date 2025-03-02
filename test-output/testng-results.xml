@@ -1,29 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="4" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-02T22:34:44 AEST" name="Failed suite [Default suite]" finished-at="2025-03-02T22:36:47 AEST" duration-ms="123185">
+  <suite started-at="2025-03-03T08:34:37 AEST" name="Default suite" finished-at="2025-03-03T08:35:51 AEST" duration-ms="74514">
     <groups>
     </groups>
-    <test started-at="2025-03-02T22:34:44 AEST" name="Default test(failed)" finished-at="2025-03-02T22:36:47 AEST" duration-ms="123185">
-      <class name="com.ecommerce.tests.HomePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.HomePageTest@470734c3]" started-at="2025-03-02T22:34:44 AEST" name="setup" finished-at="2025-03-02T22:35:20 AEST" duration-ms="36003" status="PASS">
+    <test started-at="2025-03-03T08:34:37 AEST" name="Default test" finished-at="2025-03-03T08:35:51 AEST" duration-ms="74514">
+      <class name="com.ecommerce.tests.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.LoginTest@5d908d47]" started-at="2025-03-03T08:34:37 AEST" name="setup" finished-at="2025-03-03T08:34:53 AEST" duration-ms="15585" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.HomePageTest@470734c3]" started-at="2025-03-02T22:35:20 AEST" name="initialize" finished-at="2025-03-02T22:35:20 AEST" duration-ms="43" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.LoginTest@5d908d47]" started-at="2025-03-03T08:34:53 AEST" name="initialize" finished-at="2025-03-03T08:35:01 AEST" duration-ms="8611" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="verifyHeaderNavigationLinks()[pri:3, instance:com.ecommerce.tests.HomePageTest@470734c3]" started-at="2025-03-02T22:35:20 AEST" name="verifyHeaderNavigationLinks" finished-at="2025-03-02T22:36:47 AEST" duration-ms="86669" status="PASS">
+        <test-method signature="testInvalidLogin(java.lang.String,java.lang.String)[pri:2, instance:com.ecommerce.tests.LoginTest@5d908d47]" started-at="2025-03-03T08:35:01 AEST" name="testInvalidLogin" data-provider="invalidLoginData" finished-at="2025-03-03T08:35:12 AEST" duration-ms="11290" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invaliduser@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Henref1234#]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyHeaderNavigationLinks -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.HomePageTest@470734c3]" started-at="2025-03-02T22:36:47 AEST" name="teardown" finished-at="2025-03-02T22:36:47 AEST" duration-ms="393" status="PASS">
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.LoginTest@5d908d47]" started-at="2025-03-03T08:35:12 AEST" name="teardown" finished-at="2025-03-03T08:35:13 AEST" duration-ms="242" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.ecommerce.tests.HomePageTest -->
-    </test> <!-- Default test(failed) -->
-  </suite> <!-- Failed suite [Default suite] -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.LoginTest@5d908d47]" started-at="2025-03-03T08:35:13 AEST" name="setup" finished-at="2025-03-03T08:35:35 AEST" duration-ms="22256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.LoginTest@5d908d47]" started-at="2025-03-03T08:35:35 AEST" name="initialize" finished-at="2025-03-03T08:35:40 AEST" duration-ms="5202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="testInvalidLogin(java.lang.String,java.lang.String)[pri:2, instance:com.ecommerce.tests.LoginTest@5d908d47]" started-at="2025-03-03T08:35:40 AEST" name="testInvalidLogin" data-provider="invalidLoginData" finished-at="2025-03-03T08:35:51 AEST" duration-ms="11022" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ref712producttest11@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrongpassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.LoginTest@5d908d47]" started-at="2025-03-03T08:35:51 AEST" name="teardown" finished-at="2025-03-03T08:35:51 AEST" duration-ms="224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.ecommerce.tests.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

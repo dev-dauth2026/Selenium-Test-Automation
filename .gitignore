@@ -1,0 +1,22 @@
+# Ignore environment files
+.env
+
+# Ignore Eclipse-specific files
+.project
+.classpath
+.settings/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore compiled files
+target/
+bin/
+*.class
+
+# Ignore logs and reports
+logs/
+test-output/
+
+# Ignore Maven-specific files
+.mvn/

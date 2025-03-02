@@ -22,6 +22,9 @@ public class HeaderComponent {
     private By apiTestingLink = By.xpath("//a[contains(text(),'API Testing')]");
     private By videoTutorialsLink = By.xpath("//a[contains(text(),'Video Tutorials')]");
     private By contactUsLink = By.xpath("//a[contains(text(),'Contact us')]");
+    
+    //Locators after login
+    public By logoutLink = By.xpath("//a[contains(text(),'Logout')]");
 
     // Actions
     public void clickHome() {
