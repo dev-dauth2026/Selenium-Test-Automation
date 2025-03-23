@@ -1,153 +1,711 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="14" passed="6" failed="2" skipped="6">
+<testng-results ignored="0" total="14" passed="7" failed="7" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-18T13:05:47 AEST" name="Default suite" finished-at="2025-03-18T13:14:37 AEST" duration-ms="530689">
+  <suite started-at="2025-03-24T09:40:43 AEST" name="Default suite" finished-at="2025-03-24T09:53:04 AEST" duration-ms="741253">
     <groups>
     </groups>
-    <test started-at="2025-03-18T13:05:47 AEST" name="Default test" finished-at="2025-03-18T13:14:37 AEST" duration-ms="530689">
+    <test started-at="2025-03-24T09:40:43 AEST" name="Default test" finished-at="2025-03-24T09:53:04 AEST" duration-ms="741253">
       <class name="com.ecommerce.tests.SignupTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:05:47 AEST" name="setup" finished-at="2025-03-18T13:06:13 AEST" duration-ms="25956" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:40:43 AEST" name="setup" finished-at="2025-03-24T09:41:12 AEST" duration-ms="29108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:06:13 AEST" name="initialize" finished-at="2025-03-18T13:06:23 AEST" duration-ms="10267" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:41:12 AEST" name="initialize" finished-at="2025-03-24T09:41:20 AEST" duration-ms="7765" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="testSignup(com.ecommerce.models.SignupData)[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:06:23 AEST" name="testSignup" data-provider="signupData" finished-at="2025-03-18T13:07:38 AEST" duration-ms="75449" status="PASS">
+        <test-method signature="testSignup(com.ecommerce.models.SignupData)[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:41:20 AEST" name="testSignup" data-provider="signupData" finished-at="2025-03-24T09:41:56 AEST" duration-ms="35691" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.ecommerce.models.SignupData@7efd28bd]]>
+                <![CDATA[com.ecommerce.models.SignupData@5b3bb1f7]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSignup -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:07:38 AEST" name="teardown" finished-at="2025-03-18T13:07:39 AEST" duration-ms="557" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:41:56 AEST" name="teardown" finished-at="2025-03-24T09:41:56 AEST" duration-ms="421" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:07:39 AEST" name="setup" finished-at="2025-03-18T13:07:57 AEST" duration-ms="17686" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:41:56 AEST" name="setup" finished-at="2025-03-24T09:42:16 AEST" duration-ms="20040" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:07:57 AEST" name="initialize" finished-at="2025-03-18T13:08:04 AEST" duration-ms="7103" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:42:16 AEST" name="initialize" finished-at="2025-03-24T09:42:23 AEST" duration-ms="6254" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="testSignup(com.ecommerce.models.SignupData)[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:08:04 AEST" name="testSignup" data-provider="signupData" finished-at="2025-03-18T13:08:18 AEST" duration-ms="14725" status="PASS">
+        <test-method signature="testSignup(com.ecommerce.models.SignupData)[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:42:23 AEST" name="testSignup" data-provider="signupData" finished-at="2025-03-24T09:42:30 AEST" duration-ms="7960" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.ecommerce.models.SignupData@3e8b3b79]]>
+                <![CDATA[com.ecommerce.models.SignupData@1a464fa3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSignup -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:08:19 AEST" name="teardown" finished-at="2025-03-18T13:08:19 AEST" duration-ms="318" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:42:30 AEST" name="teardown" finished-at="2025-03-24T09:42:31 AEST" duration-ms="204" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:08:19 AEST" name="setup" finished-at="2025-03-18T13:08:41 AEST" duration-ms="22329" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:42:31 AEST" name="setup" finished-at="2025-03-24T09:42:48 AEST" duration-ms="17612" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:08:41 AEST" name="initialize" finished-at="2025-03-18T13:08:49 AEST" duration-ms="8298" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:42:48 AEST" name="initialize" finished-at="2025-03-24T09:42:55 AEST" duration-ms="6507" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="testSignup(com.ecommerce.models.SignupData)[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:08:49 AEST" name="testSignup" data-provider="signupData" finished-at="2025-03-18T13:08:54 AEST" duration-ms="4640" status="PASS">
+        <test-method signature="testSignup(com.ecommerce.models.SignupData)[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:42:55 AEST" name="testSignup" data-provider="signupData" finished-at="2025-03-24T09:42:58 AEST" duration-ms="2962" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.ecommerce.models.SignupData@59c04bee]]>
+                <![CDATA[com.ecommerce.models.SignupData@6be6931f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSignup -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:08:54 AEST" name="teardown" finished-at="2025-03-18T13:08:54 AEST" duration-ms="198" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:42:58 AEST" name="teardown" finished-at="2025-03-24T09:42:58 AEST" duration-ms="112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:08:54 AEST" name="setup" finished-at="2025-03-18T13:09:10 AEST" duration-ms="16109" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:42:58 AEST" name="setup" finished-at="2025-03-24T09:43:23 AEST" duration-ms="25131" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:09:10 AEST" name="initialize" finished-at="2025-03-18T13:09:20 AEST" duration-ms="9811" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:43:23 AEST" name="initialize" finished-at="2025-03-24T09:43:30 AEST" duration-ms="7047" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="testSignup(com.ecommerce.models.SignupData)[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:09:20 AEST" name="testSignup" data-provider="signupData" finished-at="2025-03-18T13:09:25 AEST" duration-ms="4459" status="PASS">
+        <test-method signature="testSignup(com.ecommerce.models.SignupData)[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:43:30 AEST" name="testSignup" data-provider="signupData" finished-at="2025-03-24T09:43:33 AEST" duration-ms="3207" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.ecommerce.models.SignupData@3db432c2]]>
+                <![CDATA[com.ecommerce.models.SignupData@617449dd]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSignup -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:09:25 AEST" name="teardown" finished-at="2025-03-18T13:09:25 AEST" duration-ms="225" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:43:33 AEST" name="teardown" finished-at="2025-03-24T09:43:33 AEST" duration-ms="214" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:09:25 AEST" name="setup" finished-at="2025-03-18T13:09:46 AEST" duration-ms="21496" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:43:33 AEST" name="setup" finished-at="2025-03-24T09:43:53 AEST" duration-ms="19291" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:09:46 AEST" name="initialize" finished-at="2025-03-18T13:09:56 AEST" duration-ms="9288" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:43:53 AEST" name="initialize" finished-at="2025-03-24T09:44:00 AEST" duration-ms="7319" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="testSignup(com.ecommerce.models.SignupData)[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:09:56 AEST" name="testSignup" data-provider="signupData" finished-at="2025-03-18T13:10:12 AEST" duration-ms="16179" status="PASS">
+        <test-method signature="testSignup(com.ecommerce.models.SignupData)[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:44:00 AEST" name="testSignup" data-provider="signupData" finished-at="2025-03-24T09:44:16 AEST" duration-ms="15420" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.ecommerce.models.SignupData@2e71240b]]>
+                <![CDATA[com.ecommerce.models.SignupData@7f0f84d4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSignup -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:10:12 AEST" name="teardown" finished-at="2025-03-18T13:10:12 AEST" duration-ms="250" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:44:16 AEST" name="teardown" finished-at="2025-03-24T09:44:16 AEST" duration-ms="257" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:10:12 AEST" name="setup" finished-at="2025-03-18T13:10:31 AEST" duration-ms="19067" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:44:16 AEST" name="setup" finished-at="2025-03-24T09:44:34 AEST" duration-ms="18321" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:10:31 AEST" name="initialize" finished-at="2025-03-18T13:10:37 AEST" duration-ms="5600" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:44:34 AEST" name="initialize" finished-at="2025-03-24T09:44:41 AEST" duration-ms="6779" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="testSignup(com.ecommerce.models.SignupData)[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:10:37 AEST" name="testSignup" data-provider="signupData" finished-at="2025-03-18T13:11:43 AEST" duration-ms="66167" status="FAIL">
+        <test-method signature="testSignup(com.ecommerce.models.SignupData)[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:44:41 AEST" name="testSignup" data-provider="signupData" finished-at="2025-03-24T09:45:00 AEST" duration-ms="19284" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.ecommerce.models.SignupData@8c43966]]>
+                <![CDATA[com.ecommerce.models.SignupData@751d7425]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button type="submit" data-qa="create-account" class="btn btn-default">...</button> is not clickable at point (320, 664). Other element would receive the click: <div id="aswift_1_host" style="border: none !important; height: 90px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=134.0.6998.118)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.1', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4447f0b2138af8dcd523aa14c4098bee, clickElement {id=f.2D02DF4C67143DE38278B63E4D5B5662.d.8A95875024DB766AB25A0B23250866EB.e.91}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: /var/folders/n3/n8ys1ky975n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51661}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51661/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (4447f0b2138af8dcd523aa14c4098bee)] -> css selector: [data-qa='create-account']]
+Session ID: 4447f0b2138af8dcd523aa14c4098bee]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="submit" data-qa="create-account" class="btn btn-default">...</button> is not clickable at point (320, 664). Other element would receive the click: <div id="aswift_1_host" style="border: none !important; height: 90px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=134.0.6998.118)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.1', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4447f0b2138af8dcd523aa14c4098bee, clickElement {id=f.2D02DF4C67143DE38278B63E4D5B5662.d.8A95875024DB766AB25A0B23250866EB.e.91}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: /var/folders/n3/n8ys1ky975n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51661}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51661/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (4447f0b2138af8dcd523aa14c4098bee)] -> css selector: [data-qa='create-account']]
+Session ID: 4447f0b2138af8dcd523aa14c4098bee
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at com.ecommerce.pages.BasePage.click(BasePage.java:35)
+at com.ecommerce.pages.SignupPage.submitForm(SignupPage.java:93)
+at com.ecommerce.tests.SignupTest.testSignup(SignupTest.java:97)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignup -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:45:00 AEST" name="teardown" finished-at="2025-03-24T09:45:00 AEST" duration-ms="261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:45:00 AEST" name="setup" finished-at="2025-03-24T09:45:21 AEST" duration-ms="20191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:45:21 AEST" name="initialize" finished-at="2025-03-24T09:45:27 AEST" duration-ms="6179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="testSignup(com.ecommerce.models.SignupData)[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:45:27 AEST" name="testSignup" data-provider="signupData" finished-at="2025-03-24T09:45:50 AEST" duration-ms="23337" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.ecommerce.models.SignupData@a826ff8]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button type="submit" data-qa="create-account" class="btn btn-default">...</button> is not clickable at point (320, 639). Other element would receive the click: <div id="aswift_1_host" style="border: none !important; height: 90px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=134.0.6998.118)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.1', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8b6d6720769278ec522bb902c87c521c, clickElement {id=f.6C6A71FC1EACB32C0FC7D6DF19ED7B88.d.AA59C72098DF2AFBD7D54013C3121D58.e.91}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: /var/folders/n3/n8ys1ky975n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51790}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51790/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (8b6d6720769278ec522bb902c87c521c)] -> css selector: [data-qa='create-account']]
+Session ID: 8b6d6720769278ec522bb902c87c521c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="submit" data-qa="create-account" class="btn btn-default">...</button> is not clickable at point (320, 639). Other element would receive the click: <div id="aswift_1_host" style="border: none !important; height: 90px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=134.0.6998.118)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.1', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8b6d6720769278ec522bb902c87c521c, clickElement {id=f.6C6A71FC1EACB32C0FC7D6DF19ED7B88.d.AA59C72098DF2AFBD7D54013C3121D58.e.91}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: /var/folders/n3/n8ys1ky975n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51790}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51790/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (8b6d6720769278ec522bb902c87c521c)] -> css selector: [data-qa='create-account']]
+Session ID: 8b6d6720769278ec522bb902c87c521c
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at com.ecommerce.pages.BasePage.click(BasePage.java:35)
+at com.ecommerce.pages.SignupPage.submitForm(SignupPage.java:93)
+at com.ecommerce.tests.SignupTest.testSignup(SignupTest.java:97)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignup -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:45:50 AEST" name="teardown" finished-at="2025-03-24T09:45:50 AEST" duration-ms="265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:45:50 AEST" name="setup" finished-at="2025-03-24T09:46:12 AEST" duration-ms="21261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:46:12 AEST" name="initialize" finished-at="2025-03-24T09:46:19 AEST" duration-ms="6781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="testSignup(com.ecommerce.models.SignupData)[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:46:19 AEST" name="testSignup" data-provider="signupData" finished-at="2025-03-24T09:46:35 AEST" duration-ms="16956" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.ecommerce.models.SignupData@356341c9]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <input type="checkbox" name="newsletter" id="newsletter" value="1"> is not clickable at point (255, 676). Other element would receive the click: <div id="aswift_1_host" style="border: none !important; height: 90px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=134.0.6998.118)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.1', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9c06794cb9ce409609ff7a10cc1f1407, clickElement {id=f.58E40F8807DDD81C34C22618383A8340.d.93FE205C8752F5DA7489FF08DF38248D.e.73}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: /var/folders/n3/n8ys1ky975n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51927}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51927/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (9c06794cb9ce409609ff7a10cc1f1407)] -> id: newsletter]
+Session ID: 9c06794cb9ce409609ff7a10cc1f1407]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="checkbox" name="newsletter" id="newsletter" value="1"> is not clickable at point (255, 676). Other element would receive the click: <div id="aswift_1_host" style="border: none !important; height: 90px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=134.0.6998.118)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.1', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9c06794cb9ce409609ff7a10cc1f1407, clickElement {id=f.58E40F8807DDD81C34C22618383A8340.d.93FE205C8752F5DA7489FF08DF38248D.e.73}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: /var/folders/n3/n8ys1ky975n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51927}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51927/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (9c06794cb9ce409609ff7a10cc1f1407)] -> id: newsletter]
+Session ID: 9c06794cb9ce409609ff7a10cc1f1407
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at com.ecommerce.pages.BasePage.click(BasePage.java:35)
+at com.ecommerce.pages.SignupPage.setNewsletter(SignupPage.java:63)
+at com.ecommerce.tests.SignupTest.testSignup(SignupTest.java:81)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignup -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:46:35 AEST" name="teardown" finished-at="2025-03-24T09:46:36 AEST" duration-ms="272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:46:36 AEST" name="setup" finished-at="2025-03-24T09:46:57 AEST" duration-ms="21659" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:46:57 AEST" name="initialize" finished-at="2025-03-24T09:47:16 AEST" duration-ms="18516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="testSignup(com.ecommerce.models.SignupData)[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:47:16 AEST" name="testSignup" data-provider="signupData" finished-at="2025-03-24T09:47:36 AEST" duration-ms="20419" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.ecommerce.models.SignupData@5eb2972f]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button type="submit" data-qa="create-account" class="btn btn-default">...</button> is not clickable at point (320, 664). Other element would receive the click: <iframe id="aswift_1" name="aswift_1" browsingtopics="true" style="width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1005" height="124" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20250319/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;adk=1812271801&amp;client=ca-pub-1677597403311019&amp;fa=1&amp;ifi=2&amp;uci=a!2&amp;btvi=1" data-google-container-id="a!2" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CPqq096xoYwDFUCSSwUd2I8c5Q" data-load-complete="true"></iframe>
+  (Session info: chrome=134.0.6998.118)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.1', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5cac389e584d974b00c5786bb546b491, clickElement {id=f.90AC0CA2C20DA8804827F3C30FCEF8D5.d.0ED512C7DA2BB9D392D9284ACA3F0D15.e.93}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: /var/folders/n3/n8ys1ky975n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52051}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52051/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (5cac389e584d974b00c5786bb546b491)] -> css selector: [data-qa='create-account']]
+Session ID: 5cac389e584d974b00c5786bb546b491]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="submit" data-qa="create-account" class="btn btn-default">...</button> is not clickable at point (320, 664). Other element would receive the click: <iframe id="aswift_1" name="aswift_1" browsingtopics="true" style="width: 1005px !important; height: 124px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="1005" height="124" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20250319/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;adk=1812271801&amp;client=ca-pub-1677597403311019&amp;fa=1&amp;ifi=2&amp;uci=a!2&amp;btvi=1" data-google-container-id="a!2" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CPqq096xoYwDFUCSSwUd2I8c5Q" data-load-complete="true"></iframe>
+  (Session info: chrome=134.0.6998.118)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.1', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5cac389e584d974b00c5786bb546b491, clickElement {id=f.90AC0CA2C20DA8804827F3C30FCEF8D5.d.0ED512C7DA2BB9D392D9284ACA3F0D15.e.93}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: /var/folders/n3/n8ys1ky975n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52051}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52051/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (5cac389e584d974b00c5786bb546b491)] -> css selector: [data-qa='create-account']]
+Session ID: 5cac389e584d974b00c5786bb546b491
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at com.ecommerce.pages.BasePage.click(BasePage.java:35)
+at com.ecommerce.pages.SignupPage.submitForm(SignupPage.java:93)
+at com.ecommerce.tests.SignupTest.testSignup(SignupTest.java:97)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignup -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:47:36 AEST" name="teardown" finished-at="2025-03-24T09:47:37 AEST" duration-ms="279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:47:37 AEST" name="setup" finished-at="2025-03-24T09:47:56 AEST" duration-ms="19660" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:47:56 AEST" name="initialize" finished-at="2025-03-24T09:48:02 AEST" duration-ms="5676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="testSignup(com.ecommerce.models.SignupData)[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:48:02 AEST" name="testSignup" data-provider="signupData" finished-at="2025-03-24T09:48:29 AEST" duration-ms="26969" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.ecommerce.models.SignupData@3a69014e]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button type="submit" data-qa="create-account" class="btn btn-default">...</button> is not clickable at point (320, 664). Other element would receive the click: <div id="aswift_1_host" style="border: none !important; height: 90px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=134.0.6998.118)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.1', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6b0ae058ef3c240ec43e0fd08dcf901d, clickElement {id=f.F8EF9927F90EAC577EE2584AC29B5F7D.d.73F5E9EFC64ADE99A64356B33FEE0587.e.91}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: /var/folders/n3/n8ys1ky975n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52200}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52200/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (6b0ae058ef3c240ec43e0fd08dcf901d)] -> css selector: [data-qa='create-account']]
+Session ID: 6b0ae058ef3c240ec43e0fd08dcf901d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="submit" data-qa="create-account" class="btn btn-default">...</button> is not clickable at point (320, 664). Other element would receive the click: <div id="aswift_1_host" style="border: none !important; height: 90px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=134.0.6998.118)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.1', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6b0ae058ef3c240ec43e0fd08dcf901d, clickElement {id=f.F8EF9927F90EAC577EE2584AC29B5F7D.d.73F5E9EFC64ADE99A64356B33FEE0587.e.91}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: /var/folders/n3/n8ys1ky975n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52200}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52200/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (6b0ae058ef3c240ec43e0fd08dcf901d)] -> css selector: [data-qa='create-account']]
+Session ID: 6b0ae058ef3c240ec43e0fd08dcf901d
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at com.ecommerce.pages.BasePage.click(BasePage.java:35)
+at com.ecommerce.pages.SignupPage.submitForm(SignupPage.java:93)
+at com.ecommerce.tests.SignupTest.testSignup(SignupTest.java:97)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignup -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:48:29 AEST" name="teardown" finished-at="2025-03-24T09:48:29 AEST" duration-ms="278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:48:29 AEST" name="setup" finished-at="2025-03-24T09:48:51 AEST" duration-ms="21596" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:48:51 AEST" name="initialize" finished-at="2025-03-24T09:48:58 AEST" duration-ms="6687" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="testSignup(com.ecommerce.models.SignupData)[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:48:58 AEST" name="testSignup" data-provider="signupData" finished-at="2025-03-24T09:49:16 AEST" duration-ms="18612" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.ecommerce.models.SignupData@1e9d721]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <input type="checkbox" name="optin" id="optin" value="1"> is not clickable at point (255, 672). Other element would receive the click: <div id="aswift_1_host" style="border: none !important; height: 90px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=134.0.6998.118)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.1', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9bedb9e2b3e63b7b71606d50f27a7bfc, clickElement {id=f.9D7E408811FA0779BB25287EE6F71950.d.DB3C7A719F8C445B0F6F883213851796.e.72}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: /var/folders/n3/n8ys1ky975n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52331}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52331/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (9bedb9e2b3e63b7b71606d50f27a7bfc)] -> id: optin]
+Session ID: 9bedb9e2b3e63b7b71606d50f27a7bfc]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="checkbox" name="optin" id="optin" value="1"> is not clickable at point (255, 672). Other element would receive the click: <div id="aswift_1_host" style="border: none !important; height: 90px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=134.0.6998.118)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.1', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9bedb9e2b3e63b7b71606d50f27a7bfc, clickElement {id=f.9D7E408811FA0779BB25287EE6F71950.d.DB3C7A719F8C445B0F6F883213851796.e.72}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.118, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: /var/folders/n3/n8ys1ky975n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52331}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52331/devtoo..., se:cdpVersion: 134.0.6998.118, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (9bedb9e2b3e63b7b71606d50f27a7bfc)] -> id: optin]
+Session ID: 9bedb9e2b3e63b7b71606d50f27a7bfc
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at com.ecommerce.pages.BasePage.click(BasePage.java:35)
+at com.ecommerce.pages.SignupPage.setOffers(SignupPage.java:67)
+at com.ecommerce.tests.SignupTest.testSignup(SignupTest.java:82)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignup -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:49:16 AEST" name="teardown" finished-at="2025-03-24T09:49:17 AEST" duration-ms="350" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:49:17 AEST" name="setup" finished-at="2025-03-24T09:49:37 AEST" duration-ms="19990" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:49:37 AEST" name="initialize" finished-at="2025-03-24T09:49:44 AEST" duration-ms="7351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="testSignup(com.ecommerce.models.SignupData)[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:49:44 AEST" name="testSignup" data-provider="signupData" finished-at="2025-03-24T09:50:31 AEST" duration-ms="46887" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.ecommerce.models.SignupData@3b839f68]]>
               </value>
             </param>
           </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Form should not be submitted with a weak password! expected [true] but found [false]]]>
+              <![CDATA[Form should remain for duplicate mobile number expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Form should not be submitted with a weak password! expected [true] but found [false]
+              <![CDATA[java.lang.AssertionError: Form should remain for duplicate mobile number expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:110)
 at org.testng.Assert.failNotEquals(Assert.java:1577)
 at org.testng.Assert.assertTrue(Assert.java:56)
-at com.ecommerce.tests.SignupTest.testSignup(SignupTest.java:110)
+at com.ecommerce.tests.SignupTest.testSignup(SignupTest.java:133)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -182,763 +740,53 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSignup -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:11:43 AEST" name="teardown" finished-at="2025-03-18T13:11:43 AEST" duration-ms="375" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:50:31 AEST" name="teardown" finished-at="2025-03-24T09:50:31 AEST" duration-ms="286" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:11:43 AEST" name="setup" finished-at="2025-03-18T13:12:04 AEST" duration-ms="21045" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:50:31 AEST" name="setup" finished-at="2025-03-24T09:50:52 AEST" duration-ms="20917" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:12:04 AEST" name="initialize" finished-at="2025-03-18T13:12:13 AEST" duration-ms="8114" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:50:52 AEST" name="initialize" finished-at="2025-03-24T09:51:00 AEST" duration-ms="7709" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="testSignup(com.ecommerce.models.SignupData)[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:12:13 AEST" name="testSignup" data-provider="signupData" finished-at="2025-03-18T13:12:25 AEST" duration-ms="12182" status="FAIL">
+        <test-method signature="testSignup(com.ecommerce.models.SignupData)[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:51:00 AEST" name="testSignup" data-provider="signupData" finished-at="2025-03-24T09:51:31 AEST" duration-ms="31072" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.ecommerce.models.SignupData@70c491b8]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[invalid session id: session deleted as the browser has closed the connection
-from disconnected: Unable to receive message from renderer
-  (Session info: chrome=134.0.6998.89)
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.1', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3da580b1479a43a039c7434ecc1fe907, executeScript {script=arguments[0].click();, args=[{element-6066-11e4-a52e-4f735466cecf=f.B7D0CD460D075314902779EAFAA6E591.d.B8B36C1D3B8F088F8FB26F4AD017BFF3.e.75}]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: /var/folders/n3/n8ys1ky975n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62535}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:62535/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3da580b1479a43a039c7434ecc1fe907]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: Unable to receive message from renderer
-  (Session info: chrome=134.0.6998.89)
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.1', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3da580b1479a43a039c7434ecc1fe907, executeScript {script=arguments[0].click();, args=[{element-6066-11e4-a52e-4f735466cecf=f.B7D0CD460D075314902779EAFAA6E591.d.B8B36C1D3B8F088F8FB26F4AD017BFF3.e.75}]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: /var/folders/n3/n8ys1ky975n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62535}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:62535/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3da580b1479a43a039c7434ecc1fe907
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:480)
-at com.ecommerce.pages.LoginPage.fillSignUpForm(LoginPage.java:99)
-at com.ecommerce.tests.SignupTest.testSignup(SignupTest.java:47)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSignup -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:12:25 AEST" name="teardown" finished-at="2025-03-18T13:12:25 AEST" duration-ms="109" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:12:25 AEST" name="setup" finished-at="2025-03-18T13:12:51 AEST" duration-ms="26550" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:12:51 AEST" name="initialize" finished-at="2025-03-18T13:13:04 AEST" duration-ms="12404" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="testSignup(com.ecommerce.models.SignupData)[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:13:04 AEST" name="testSignup" data-provider="signupData" finished-at="2025-03-18T13:14:13 AEST" duration-ms="69067" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.ecommerce.models.SignupData@7845b21a]]>
+                <![CDATA[com.ecommerce.models.SignupData@7a75183d]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSignup -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:14:13 AEST" name="teardown" finished-at="2025-03-18T13:14:13 AEST" duration-ms="377" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:51:31 AEST" name="teardown" finished-at="2025-03-24T09:51:31 AEST" duration-ms="296" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:14:13 AEST" name="setup" finished-at="2025-03-18T13:14:34 AEST" duration-ms="20962" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:51:31 AEST" name="setup" finished-at="2025-03-24T09:51:43 AEST" duration-ms="12399" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:14:34 AEST" name="initialize" finished-at="2025-03-18T13:14:37 AEST" duration-ms="2826" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[invalid session id: session deleted as the browser has closed the connection
-from disconnected: Unable to receive message from renderer
-  (Session info: chrome=134.0.6998.89)
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.1', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [518a0d27ab9ec7074a07d261372ae99f, get {url=https://automationexercise.com/login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: /var/folders/n3/n8ys1ky975n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64235/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 518a0d27ab9ec7074a07d261372ae99f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: Unable to receive message from renderer
-  (Session info: chrome=134.0.6998.89)
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.1', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [518a0d27ab9ec7074a07d261372ae99f, get {url=https://automationexercise.com/login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: /var/folders/n3/n8ys1ky975n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64235/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 518a0d27ab9ec7074a07d261372ae99f
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
-at com.ecommerce.pages.LoginPage.gotoLoginPage(LoginPage.java:38)
-at com.ecommerce.tests.SignupTest.initialize(SignupTest.java:33)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:51:43 AEST" name="initialize" finished-at="2025-03-24T09:51:51 AEST" duration-ms="7399" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="testSignup(com.ecommerce.models.SignupData)[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:14:37 AEST" name="testSignup" data-provider="signupData" finished-at="2025-03-18T13:14:37 AEST" duration-ms="0" status="SKIP">
+        <test-method signature="testSignup(com.ecommerce.models.SignupData)[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:51:51 AEST" name="testSignup" data-provider="signupData" finished-at="2025-03-24T09:53:04 AEST" duration-ms="73020" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.ecommerce.models.SignupData@3c71cf3e]]>
+                <![CDATA[com.ecommerce.models.SignupData@6802c10e]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[invalid session id: session deleted as the browser has closed the connection
-from disconnected: Unable to receive message from renderer
-  (Session info: chrome=134.0.6998.89)
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.1', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [518a0d27ab9ec7074a07d261372ae99f, get {url=https://automationexercise.com/login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: /var/folders/n3/n8ys1ky975n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64235/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 518a0d27ab9ec7074a07d261372ae99f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: Unable to receive message from renderer
-  (Session info: chrome=134.0.6998.89)
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.1', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [518a0d27ab9ec7074a07d261372ae99f, get {url=https://automationexercise.com/login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: /var/folders/n3/n8ys1ky975n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64235/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 518a0d27ab9ec7074a07d261372ae99f
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
-at com.ecommerce.pages.LoginPage.gotoLoginPage(LoginPage.java:38)
-at com.ecommerce.tests.SignupTest.initialize(SignupTest.java:33)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSignup -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:14:37 AEST" name="teardown" finished-at="2025-03-18T13:14:37 AEST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:14:37 AEST" name="setup" finished-at="2025-03-18T13:14:37 AEST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:14:37 AEST" name="initialize" finished-at="2025-03-18T13:14:37 AEST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="testSignup(com.ecommerce.models.SignupData)[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:14:37 AEST" name="testSignup" data-provider="signupData" finished-at="2025-03-18T13:14:37 AEST" duration-ms="0" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.ecommerce.models.SignupData@5d800a56]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[invalid session id: session deleted as the browser has closed the connection
-from disconnected: Unable to receive message from renderer
-  (Session info: chrome=134.0.6998.89)
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.1', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [518a0d27ab9ec7074a07d261372ae99f, get {url=https://automationexercise.com/login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: /var/folders/n3/n8ys1ky975n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64235/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 518a0d27ab9ec7074a07d261372ae99f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: Unable to receive message from renderer
-  (Session info: chrome=134.0.6998.89)
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.1', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [518a0d27ab9ec7074a07d261372ae99f, get {url=https://automationexercise.com/login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: /var/folders/n3/n8ys1ky975n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64235/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 518a0d27ab9ec7074a07d261372ae99f
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
-at com.ecommerce.pages.LoginPage.gotoLoginPage(LoginPage.java:38)
-at com.ecommerce.tests.SignupTest.initialize(SignupTest.java:33)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSignup -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:14:37 AEST" name="teardown" finished-at="2025-03-18T13:14:37 AEST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:14:37 AEST" name="setup" finished-at="2025-03-18T13:14:37 AEST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:14:37 AEST" name="initialize" finished-at="2025-03-18T13:14:37 AEST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="testSignup(com.ecommerce.models.SignupData)[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:14:37 AEST" name="testSignup" data-provider="signupData" finished-at="2025-03-18T13:14:37 AEST" duration-ms="0" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.ecommerce.models.SignupData@563263a]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[invalid session id: session deleted as the browser has closed the connection
-from disconnected: Unable to receive message from renderer
-  (Session info: chrome=134.0.6998.89)
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.1', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [518a0d27ab9ec7074a07d261372ae99f, get {url=https://automationexercise.com/login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: /var/folders/n3/n8ys1ky975n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64235/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 518a0d27ab9ec7074a07d261372ae99f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: Unable to receive message from renderer
-  (Session info: chrome=134.0.6998.89)
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.1', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [518a0d27ab9ec7074a07d261372ae99f, get {url=https://automationexercise.com/login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: /var/folders/n3/n8ys1ky975n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64235/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 518a0d27ab9ec7074a07d261372ae99f
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
-at com.ecommerce.pages.LoginPage.gotoLoginPage(LoginPage.java:38)
-at com.ecommerce.tests.SignupTest.initialize(SignupTest.java:33)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSignup -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:14:37 AEST" name="teardown" finished-at="2025-03-18T13:14:37 AEST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:14:37 AEST" name="setup" finished-at="2025-03-18T13:14:37 AEST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:14:37 AEST" name="initialize" finished-at="2025-03-18T13:14:37 AEST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="testSignup(com.ecommerce.models.SignupData)[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:14:37 AEST" name="testSignup" data-provider="signupData" finished-at="2025-03-18T13:14:37 AEST" duration-ms="0" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.ecommerce.models.SignupData@2e1ba142]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[invalid session id: session deleted as the browser has closed the connection
-from disconnected: Unable to receive message from renderer
-  (Session info: chrome=134.0.6998.89)
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.1', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [518a0d27ab9ec7074a07d261372ae99f, get {url=https://automationexercise.com/login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: /var/folders/n3/n8ys1ky975n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64235/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 518a0d27ab9ec7074a07d261372ae99f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: Unable to receive message from renderer
-  (Session info: chrome=134.0.6998.89)
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.1', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [518a0d27ab9ec7074a07d261372ae99f, get {url=https://automationexercise.com/login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: /var/folders/n3/n8ys1ky975n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64235/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 518a0d27ab9ec7074a07d261372ae99f
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
-at com.ecommerce.pages.LoginPage.gotoLoginPage(LoginPage.java:38)
-at com.ecommerce.tests.SignupTest.initialize(SignupTest.java:33)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSignup -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:14:37 AEST" name="teardown" finished-at="2025-03-18T13:14:37 AEST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:14:37 AEST" name="setup" finished-at="2025-03-18T13:14:37 AEST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testSignup(com.ecommerce.models.SignupData)[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:14:37 AEST" name="testSignup" data-provider="signupData" finished-at="2025-03-18T13:14:37 AEST" duration-ms="0" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.ecommerce.models.SignupData@797f97e3]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[invalid session id: session deleted as the browser has closed the connection
-from disconnected: Unable to receive message from renderer
-  (Session info: chrome=134.0.6998.89)
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.1', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [518a0d27ab9ec7074a07d261372ae99f, get {url=https://automationexercise.com/login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: /var/folders/n3/n8ys1ky975n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64235/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 518a0d27ab9ec7074a07d261372ae99f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: Unable to receive message from renderer
-  (Session info: chrome=134.0.6998.89)
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.1', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [518a0d27ab9ec7074a07d261372ae99f, get {url=https://automationexercise.com/login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: /var/folders/n3/n8ys1ky975n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64235/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 518a0d27ab9ec7074a07d261372ae99f
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
-at com.ecommerce.pages.LoginPage.gotoLoginPage(LoginPage.java:38)
-at com.ecommerce.tests.SignupTest.initialize(SignupTest.java:33)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSignup -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:14:37 AEST" name="initialize" finished-at="2025-03-18T13:14:37 AEST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:14:37 AEST" name="teardown" finished-at="2025-03-18T13:14:37 AEST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:14:37 AEST" name="setup" finished-at="2025-03-18T13:14:37 AEST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:14:37 AEST" name="initialize" finished-at="2025-03-18T13:14:37 AEST" duration-ms="0" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="testSignup(com.ecommerce.models.SignupData)[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:14:37 AEST" name="testSignup" data-provider="signupData" finished-at="2025-03-18T13:14:37 AEST" duration-ms="0" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[com.ecommerce.models.SignupData@9f2376f]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchSessionException">
-            <message>
-              <![CDATA[invalid session id: session deleted as the browser has closed the connection
-from disconnected: Unable to receive message from renderer
-  (Session info: chrome=134.0.6998.89)
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.1', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [518a0d27ab9ec7074a07d261372ae99f, get {url=https://automationexercise.com/login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: /var/folders/n3/n8ys1ky975n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64235/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 518a0d27ab9ec7074a07d261372ae99f]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id: session deleted as the browser has closed the connection
-from disconnected: Unable to receive message from renderer
-  (Session info: chrome=134.0.6998.89)
-Build info: version: '4.9.1', revision: 'eb2032df7f'
-System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '15.3.1', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [518a0d27ab9ec7074a07d261372ae99f, get {url=https://automationexercise.com/login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: /var/folders/n3/n8ys1ky975n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64235}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64235/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 518a0d27ab9ec7074a07d261372ae99f
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:297)
-at com.ecommerce.pages.LoginPage.gotoLoginPage(LoginPage.java:38)
-at com.ecommerce.tests.SignupTest.initialize(SignupTest.java:33)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSignup -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-18T13:14:37 AEST" name="teardown" finished-at="2025-03-18T13:14:37 AEST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.SignupTest@2af004b]" started-at="2025-03-24T09:53:04 AEST" name="teardown" finished-at="2025-03-24T09:53:04 AEST" duration-ms="410" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

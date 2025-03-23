@@ -62,7 +62,7 @@ public class TestDataReader {
                 email = email.replace("@", "+" + uniqueSuffix + "@");  
             }
             
-            if(! "fail_duplicate_mobile_number".equalsIgnoreCase(expectedResult) && ! "fail_invalid_mobile".equalsIgnoreCase(expectedResult)) {
+            if(! ("fail_invalid_mobile".equalsIgnoreCase(expectedResult) || "fail_duplicate_mobile_number".equalsIgnoreCase(expectedResult))) {
             	// Dynamic Mobile Number (random last 4 digits, keep prefix same)
                 String mobilePrefix = mobile.substring(0, mobile.length() - 4); // Keep beginning digits same
                 String randomLast4Digits = String.format("%04d", (int) (Math.random() * 10000)); // 0000 to 9999
