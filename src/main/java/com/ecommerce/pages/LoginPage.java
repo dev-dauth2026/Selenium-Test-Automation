@@ -1,9 +1,14 @@
 package com.ecommerce.pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.ecommerce.utils.ConfigReader;
 
@@ -23,8 +28,8 @@ public class LoginPage extends BasePage {
     private By loginErrorMessage = By.xpath("//p[contains(text(),'Your email or password is incorrect!')]");
 
     // Signup Section Locators
-    private By signupNameField = By.xpath("//input[@data-qa='signup-name']");
-    private By signupEmailField = By.xpath("//input[@data-qa='signup-email']");
+    public By signupNameField = By.xpath("//input[@data-qa='signup-name']");
+    public By signupEmailField = By.xpath("//input[@data-qa='signup-email']");
     private By signupButton = By.xpath("//button[@data-qa='signup-button']");
     private By signupErrorMessage = By.xpath("//p[contains(text(),'Email Address already exist!')]");
 
@@ -84,6 +89,28 @@ public class LoginPage extends BasePage {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         return (Boolean) js.executeScript("return arguments[0].validity.valueMissing;", driver.findElement(field));
     }
+    
+    public void fillSignUpForm(String name, String email) {
+    	type(signupNameField, name);
+    	type(signupEmailField, email);
+    	
+    	// Perform JS click for reliability
+        WebElement signupBtn = driver.findElement(signupButton);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", signupBtn);
+    	
+    }
+    
+    public void signupPageWait() {
+    	// Now wait for "Enter Account Information" title
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); 
+        wait.until(ExpectedConditions.visibilityOfElementLocated(
+            By.xpath("//b[contains(text(),'Enter Account Information')]")
+        ));
+    }
+    
+	public boolean isSignupFormStillVisible() {
+		return isElementDisplayed(signupNameField);
+	}
     
     
 

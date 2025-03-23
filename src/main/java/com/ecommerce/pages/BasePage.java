@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.ecommerce.components.FooterComponent;
@@ -41,8 +42,20 @@ public class BasePage {
         element.sendKeys(text);
     }
     
-    // **Reusable getText of locators
- // **Reusable getText Method with Exception Handling**
+    //Reusable dropdown selector by value
+    protected void selectByValue(By locator, String value) {
+    	WebElement dropdownElement = driver.findElement(locator);
+    	Select dropdown = new Select(dropdownElement);
+    	dropdown.selectByValue(value);
+    }
+    
+    protected void selectByVisibleText(By locator, String text) {
+        new Select(wait.until(ExpectedConditions.visibilityOfElementLocated(locator))).selectByVisibleText(text);
+    }
+
+    
+
+    // **Reusable getText Method with Exception Handling**
     protected String getText(By locator) {
         try {
             WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
@@ -54,7 +67,7 @@ public class BasePage {
             return "[TEXT NOT FOUND]";
         }
     }
-
+    
 
     // **Check If Element Is Displayed**
     protected boolean isElementDisplayed(By locator) {
