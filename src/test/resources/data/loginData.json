@@ -1,0 +1,38 @@
+[
+  {
+    "test_case": "Valid Login",
+    "email": "ref712producttest11@gmail.com",
+    "password": "Henref1234#",
+    "expected_result": "success"
+  },
+  {
+    "test_case": "Invalid Password",
+    "email": "valid.user@example.com",
+    "password": "wrongpass",
+    "expected_result": "fail_invalid_password"
+  },
+  {
+    "test_case": "Invalid Email",
+    "email": "invalid.user@example.com",
+    "password": "ValidPass123!",
+    "expected_result": "fail_invalid_email"
+  },
+  {
+    "test_case": "Empty Email",
+    "email": "",
+    "password": "ValidPass123!",
+    "expected_result": "fail_empty_email"
+  },
+  {
+    "test_case": "Empty Password",
+    "email": "valid.user@example.com",
+    "password": "",
+    "expected_result": "fail_empty_password"
+  },
+  {
+    "test_case": "Both Fields Empty",
+    "email": "",
+    "password": "",
+    "expected_result": "fail_both_fields_empty"
+  }
+]

@@ -1,5 +1,6 @@
 package com.ecommerce.utils;
 
+import com.ecommerce.models.LoginData;
 import com.ecommerce.models.SignupData;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -96,6 +97,36 @@ public class TestDataReader {
 
             // Add SignupData object as Object[] to List
             testData.add(new Object[]{signupData});
+        }
+
+        return testData.iterator();
+    }
+    
+    @DataProvider(name = "loginData")
+    public static Iterator<Object[]> loginData() {
+        JSONParser parser = new JSONParser();
+        JSONArray jsonArray;
+
+        try {
+            FileReader reader = new FileReader("src/test/resources/data/loginData.json");
+            jsonArray = (JSONArray) parser.parse(reader);
+            reader.close();
+        } catch (Exception e) {
+            throw new RuntimeException("Failed to read login data", e);
+        }
+
+        List<Object[]> testData = new ArrayList<>();
+        for (Object obj : jsonArray) {
+            JSONObject jsonObject = (JSONObject) obj;
+
+            LoginData loginData = new LoginData(
+                (String) jsonObject.get("test_case"),
+                (String) jsonObject.get("email"),
+                (String) jsonObject.get("password"),
+                (String) jsonObject.get("expected_result")
+            );
+
+            testData.add(new Object[]{loginData});
         }
 
         return testData.iterator();

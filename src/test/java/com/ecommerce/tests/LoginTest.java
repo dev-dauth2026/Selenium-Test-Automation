@@ -5,8 +5,10 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.ecommerce.models.LoginData;
 import com.ecommerce.pages.LoginPage;
 import com.ecommerce.utils.EnvReader;
+import com.ecommerce.utils.TestDataReader;
 
 public class LoginTest extends BaseTest {
     LoginPage loginPage;
@@ -23,65 +25,35 @@ public class LoginTest extends BaseTest {
     /**
      * Test Case: Verify user can log in with valid credentials.
      */
-    @Test(priority = 1)
-    public void testValidLogin() {
+    @Test(dataProvider = "loginData", dataProviderClass = TestDataReader.class)
+    public void testValidLogin(LoginData loginData) {
     	
-        loginPage.enterLoginEmail(EnvReader.getEnv("LOGIN_EMAIL"));
-        loginPage.enterLoginPassword(EnvReader.getEnv("LOGIN_PASSWORD"));
-        loginPage.clickLogin();
-        Assert.assertTrue(loginPage.isLogoutButtonDisplayed(),"Login failed with valid credentials!");
-        Assert.assertFalse(loginPage.isLoginErrorDisplayed(), "Login failed with valid credentials!");
-
-    }
-
-    /**
-     * Test Case: Verify error message is displayed for invalid login.
-     */
-
-  
-    @Test(priority = 2, dataProvider = "invalidLoginData")
-    public void testInvalidLogin(String email, String password) {
-        loginPage.enterLoginEmail(email);
-        loginPage.enterLoginPassword(password);
+    	loginPage.enterLoginEmail(loginData.getEmail());
+        loginPage.enterLoginPassword(loginData.getPassword());
         loginPage.clickLogin();
 
-        // Retrieve actual error message from UI after login attempt
-        String actualErrorMessage = loginPage.getLoginErrorMessage();
+        switch (loginData.getExpected_result().toLowerCase()) {
+            case "success":
+                Assert.assertTrue(loginPage.isLogoutButtonDisplayed(), "Login should be successful");
+                break;
+            case "fail_invalid_email":
+            case "fail_invalid_password":
+                Assert.assertTrue(loginPage.isLoginErrorDisplayed(), "Login error should be shown");
+                break;
+            case "fail_empty_email":
+                Assert.assertTrue(loginPage.isFieldRequired(loginPage.loginEmailField), "Email is required");
+                break;
+            case "fail_empty_password":
+                Assert.assertTrue(loginPage.isFieldRequired(loginPage.loginPasswordField), "Password is required");
+                break;
+            case "fail_both_fields_empty":
+                Assert.assertTrue(loginPage.isFieldRequired(loginPage.loginPasswordField), "Email and Password is required");
+                break;
+            default:
+                Assert.fail("Unexpected result type: " + loginData.getExpected_result());
+        }
 
-        // Debug log
-        System.out.println("Actual Error Message: " + actualErrorMessage);
-
-        // Validate that an error message is displayed
-        Assert.assertTrue(loginPage.isLoginErrorDisplayed(), "Expected error message not displayed!");
-
-        // Ensure error message is not empty
-        Assert.assertFalse(actualErrorMessage.isEmpty(), "Error message should not be empty!");
     }
 
 
-    @DataProvider(name = "invalidLoginData")
-    public Object[][] invalidLoginData() {
-        return new Object[][]{
-            {"invaliduser@gmail.com", EnvReader.getEnv("LOGIN_PASSWORD")},  // Invalid email
-            {EnvReader.getEnv("LOGIN_EMAIL"), "wrongpassword"}  // Invalid password
-        };
-    }
-
-   
-
-    /**
-     * Test Case: Verify error message is displayed when trying to login with empty field.
-     */
-    @Test(priority = 3)
-    public void emptyInputField() {
-        loginPage.enterLoginEmail("");
-        loginPage.enterLoginPassword(""); // Empty field
-        loginPage.clickLogin();
-        Assert.assertTrue(driver.getCurrentUrl().contains("login"), "Login failed with empty field");
-     // Check that browser validation is triggered for both fields
-        Assert.assertTrue(loginPage.isFieldRequired(loginPage.loginEmailField),
-                "Login Email field did not trigger required validation!");
-
-        
-    }
 }
