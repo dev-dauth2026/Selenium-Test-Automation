@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.ecommerce.components.FooterComponent;
 import com.ecommerce.components.HeaderComponent;
+import com.ecommerce.components.ProductCardComponent;
 
 public class BasePage {
     protected WebDriver driver;
@@ -19,6 +20,7 @@ public class BasePage {
     // Header and Footer Components
     public HeaderComponent header;
     public FooterComponent footer;
+    public ProductCardComponent productCard;
 
     // Constructor
     public BasePage(WebDriver driver) {
