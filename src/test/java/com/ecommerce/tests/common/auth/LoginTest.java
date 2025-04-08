@@ -1,4 +1,4 @@
-package com.ecommerce.tests;
+package com.ecommerce.tests.common.auth;
 
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import com.ecommerce.models.LoginData;
 import com.ecommerce.pages.LoginPage;
+import com.ecommerce.tests.base.BaseTest;
 import com.ecommerce.utils.EnvReader;
 import com.ecommerce.utils.TestDataReader;
 

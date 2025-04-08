@@ -1,4 +1,4 @@
-package com.ecommerce.tests;
+package com.ecommerce.tests.base;
 
 import com.ecommerce.utils.ConfigReader;
 import io.github.bonigarcia.wdm.WebDriverManager;

@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import com.ecommerce.components.ProductCardComponent;
+import com.ecommerce.utils.ConfigReader;
 
 public class ProductPage extends BasePage {
 	private ProductCardComponent productCard;
@@ -16,6 +17,11 @@ public class ProductPage extends BasePage {
 		
 		this.productCard = new ProductCardComponent(driver);
 		
+	}
+	
+	// Navigate to productPage
+	public void gotoProductPage() {
+		this.driver.get(ConfigReader.getProperty("base_url")+"/product");
 	}
 	
 	

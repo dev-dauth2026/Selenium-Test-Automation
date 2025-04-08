@@ -1,6 +1,8 @@
-package com.ecommerce.tests;
+package com.ecommerce.tests.common.home;
 
 import com.ecommerce.pages.HomePage;
+import com.ecommerce.tests.base.BaseTest;
+
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;

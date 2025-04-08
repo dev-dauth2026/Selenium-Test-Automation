@@ -1,4 +1,4 @@
-package com.ecommerce.tests;
+package com.ecommerce.tests.common.auth;
 
 import org.testng.annotations.Test;
 import java.time.Duration;
@@ -15,6 +15,7 @@ import com.ecommerce.models.SignupData;
 import com.ecommerce.pages.AccountCreatedPage;
 import com.ecommerce.pages.LoginPage;
 import com.ecommerce.pages.SignupPage;
+import com.ecommerce.tests.base.BaseTest;
 import com.ecommerce.utils.TestDataReader;
 
 public class SignupTest extends BaseTest{
