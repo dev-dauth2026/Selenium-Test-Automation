@@ -1,17 +1,19 @@
 package com.ecommerce.utils;
 
-import com.ecommerce.models.LoginData;
-import com.ecommerce.models.SignupData;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.testng.annotations.DataProvider;
-
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.UUID;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.testng.annotations.DataProvider;
+
+import com.ecommerce.models.LoginData;
+import com.ecommerce.models.SearchData;
+import com.ecommerce.models.SignupData;
 
 public class TestDataReader {
 
@@ -130,5 +132,51 @@ public class TestDataReader {
         }
 
         return testData.iterator();
+    }
+    
+    @DataProvider(name = "searchData")
+    public static Iterator<Object[]> searchData() {
+    	JSONParser parser = new JSONParser();
+    	JSONArray jsonArray;
+    	
+    	try {
+    		FileReader reader = new FileReader("src/test/resources/data/searchData.json");
+    		jsonArray = (JSONArray) parser.parse(reader);
+    		reader.close();
+    		
+    	}catch(Exception e) {
+    		throw new RuntimeException("Failed to read login data", e);
+    	}
+    	
+    	List<Object[] > testData = new ArrayList<>();
+    	for (Object obj : jsonArray) {
+    		JSONObject jsonObject = (JSONObject) obj;
+    		String test_case = (String) jsonObject.getOrDefault("test_case", "");
+            String description = (String) jsonObject.getOrDefault("description", "");
+            String search_term = (String) jsonObject.getOrDefault("search_term", "");
+            String expected_product = (String) jsonObject.getOrDefault("expected_product", null);
+            String expected_contains = (String) jsonObject.getOrDefault("expected_contains", null);
+
+            Boolean expected_no_result = jsonObject.containsKey("expected_no_result")
+                    ? (Boolean) jsonObject.get("expected_no_result") : false;
+
+            Boolean expect_all_products = jsonObject.containsKey("expect_all_products")
+                    ? (Boolean) jsonObject.get("expect_all_products") : false;
+
+            SearchData searchData = new SearchData(
+                    test_case,
+                    description,
+                    search_term,
+                    expected_product,
+                    expected_contains,
+                    expected_no_result,
+                    expect_all_products
+            );
+    		
+    		testData.add(new Object[] {searchData});		
+    				
+    	}
+    		
+    	return testData.iterator();
     }
 }

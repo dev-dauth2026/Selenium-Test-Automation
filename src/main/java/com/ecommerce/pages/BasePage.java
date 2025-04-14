@@ -79,4 +79,8 @@ public class BasePage {
             return false;
         }
     }
+    
+    protected boolean isTextPresent(String expectedText) {
+    	return driver.getPageSource().contains(expectedText);
+    }
 }

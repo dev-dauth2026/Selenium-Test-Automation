@@ -1,151 +1,320 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="5" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-25T12:43:56 AEST" name="Default suite" finished-at="2025-03-25T12:47:41 AEST" duration-ms="225452">
+  <suite started-at="2025-04-14T11:52:15 AEST" name="Default suite" finished-at="2025-04-14T11:57:29 AEST" duration-ms="314658">
     <groups>
     </groups>
-    <test started-at="2025-03-25T12:43:56 AEST" name="Default test" finished-at="2025-03-25T12:47:41 AEST" duration-ms="225452">
-      <class name="com.ecommerce.tests.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.LoginTest@5dafbe45]" started-at="2025-03-25T12:43:56 AEST" name="setup" finished-at="2025-03-25T12:44:12 AEST" duration-ms="15892" status="PASS">
+    <test started-at="2025-04-14T11:52:15 AEST" name="Default test" finished-at="2025-04-14T11:57:29 AEST" duration-ms="314658">
+      <class name="com.ecommerce.tests.common.product.SearchTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.common.product.SearchTest@2af004b]" started-at="2025-04-14T11:52:15 AEST" name="setup" finished-at="2025-04-14T11:52:36 AEST" duration-ms="21363" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.LoginTest@5dafbe45]" started-at="2025-03-25T12:44:12 AEST" name="initialize" finished-at="2025-03-25T12:44:19 AEST" duration-ms="7278" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.common.product.SearchTest@2af004b]" started-at="2025-04-14T11:52:36 AEST" name="initialize" finished-at="2025-04-14T11:52:42 AEST" duration-ms="6483" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="testValidLogin(com.ecommerce.models.LoginData)[pri:0, instance:com.ecommerce.tests.LoginTest@5dafbe45]" started-at="2025-03-25T12:44:19 AEST" name="testValidLogin" data-provider="loginData" finished-at="2025-03-25T12:44:35 AEST" duration-ms="16329" status="PASS">
+        <test-method signature="testSearchFunctionality(com.ecommerce.models.SearchData)[pri:0, instance:com.ecommerce.tests.common.product.SearchTest@2af004b]" started-at="2025-04-14T11:52:42 AEST" name="testSearchFunctionality" data-provider="searchData" finished-at="2025-04-14T11:52:47 AEST" duration-ms="4740" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.ecommerce.models.LoginData@3e33d73e]]>
+                <![CDATA[com.ecommerce.models.SearchData@3bb87d36]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.LoginTest@5dafbe45]" started-at="2025-03-25T12:44:35 AEST" name="teardown" finished-at="2025-03-25T12:44:35 AEST" duration-ms="292" status="PASS">
+        </test-method> <!-- testSearchFunctionality -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.common.product.SearchTest@2af004b]" started-at="2025-04-14T11:52:47 AEST" name="teardown" finished-at="2025-04-14T11:52:47 AEST" duration-ms="213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.LoginTest@5dafbe45]" started-at="2025-03-25T12:44:35 AEST" name="setup" finished-at="2025-03-25T12:44:56 AEST" duration-ms="20906" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.common.product.SearchTest@2af004b]" started-at="2025-04-14T11:52:47 AEST" name="setup" finished-at="2025-04-14T11:53:02 AEST" duration-ms="14156" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.LoginTest@5dafbe45]" started-at="2025-03-25T12:44:56 AEST" name="initialize" finished-at="2025-03-25T12:45:04 AEST" duration-ms="7978" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.common.product.SearchTest@2af004b]" started-at="2025-04-14T11:53:02 AEST" name="initialize" finished-at="2025-04-14T11:53:13 AEST" duration-ms="11013" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="testValidLogin(com.ecommerce.models.LoginData)[pri:0, instance:com.ecommerce.tests.LoginTest@5dafbe45]" started-at="2025-03-25T12:45:04 AEST" name="testValidLogin" data-provider="loginData" finished-at="2025-03-25T12:45:19 AEST" duration-ms="14861" status="PASS">
+        <test-method signature="testSearchFunctionality(com.ecommerce.models.SearchData)[pri:0, instance:com.ecommerce.tests.common.product.SearchTest@2af004b]" started-at="2025-04-14T11:53:13 AEST" name="testSearchFunctionality" data-provider="searchData" finished-at="2025-04-14T11:53:18 AEST" duration-ms="5165" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.ecommerce.models.LoginData@7d78f3d5]]>
+                <![CDATA[com.ecommerce.models.SearchData@eb6ec6]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.LoginTest@5dafbe45]" started-at="2025-03-25T12:45:19 AEST" name="teardown" finished-at="2025-03-25T12:45:19 AEST" duration-ms="234" status="PASS">
+        </test-method> <!-- testSearchFunctionality -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.common.product.SearchTest@2af004b]" started-at="2025-04-14T11:53:18 AEST" name="teardown" finished-at="2025-04-14T11:53:18 AEST" duration-ms="301" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.LoginTest@5dafbe45]" started-at="2025-03-25T12:45:19 AEST" name="setup" finished-at="2025-03-25T12:45:40 AEST" duration-ms="20901" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.common.product.SearchTest@2af004b]" started-at="2025-04-14T11:53:18 AEST" name="setup" finished-at="2025-04-14T11:53:38 AEST" duration-ms="19645" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.LoginTest@5dafbe45]" started-at="2025-03-25T12:45:40 AEST" name="initialize" finished-at="2025-03-25T12:45:48 AEST" duration-ms="7721" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.common.product.SearchTest@2af004b]" started-at="2025-04-14T11:53:38 AEST" name="initialize" finished-at="2025-04-14T11:53:56 AEST" duration-ms="18618" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="testValidLogin(com.ecommerce.models.LoginData)[pri:0, instance:com.ecommerce.tests.LoginTest@5dafbe45]" started-at="2025-03-25T12:45:48 AEST" name="testValidLogin" data-provider="loginData" finished-at="2025-03-25T12:45:57 AEST" duration-ms="9109" status="PASS">
+        <test-method signature="testSearchFunctionality(com.ecommerce.models.SearchData)[pri:0, instance:com.ecommerce.tests.common.product.SearchTest@2af004b]" started-at="2025-04-14T11:53:56 AEST" name="testSearchFunctionality" data-provider="searchData" finished-at="2025-04-14T11:54:14 AEST" duration-ms="18058" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.ecommerce.models.LoginData@37ad042b]]>
+                <![CDATA[com.ecommerce.models.SearchData@21b6c9c2]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected 'nno product found' message is not displayed expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected 'nno product found' message is not displayed expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at com.ecommerce.tests.common.product.SearchTest.testSearchFunctionality(SearchTest.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchFunctionality -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.common.product.SearchTest@2af004b]" started-at="2025-04-14T11:54:14 AEST" name="teardown" finished-at="2025-04-14T11:54:15 AEST" duration-ms="285" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.common.product.SearchTest@2af004b]" started-at="2025-04-14T11:54:15 AEST" name="setup" finished-at="2025-04-14T11:54:30 AEST" duration-ms="15520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.common.product.SearchTest@2af004b]" started-at="2025-04-14T11:54:30 AEST" name="initialize" finished-at="2025-04-14T11:54:49 AEST" duration-ms="18640" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="testSearchFunctionality(com.ecommerce.models.SearchData)[pri:0, instance:com.ecommerce.tests.common.product.SearchTest@2af004b]" started-at="2025-04-14T11:54:49 AEST" name="testSearchFunctionality" data-provider="searchData" finished-at="2025-04-14T11:54:56 AEST" duration-ms="7523" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.ecommerce.models.SearchData@f1266c6]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.LoginTest@5dafbe45]" started-at="2025-03-25T12:45:57 AEST" name="teardown" finished-at="2025-03-25T12:45:57 AEST" duration-ms="183" status="PASS">
+        </test-method> <!-- testSearchFunctionality -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.common.product.SearchTest@2af004b]" started-at="2025-04-14T11:54:56 AEST" name="teardown" finished-at="2025-04-14T11:54:57 AEST" duration-ms="204" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.LoginTest@5dafbe45]" started-at="2025-03-25T12:45:57 AEST" name="setup" finished-at="2025-03-25T12:46:16 AEST" duration-ms="18465" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.common.product.SearchTest@2af004b]" started-at="2025-04-14T11:54:57 AEST" name="setup" finished-at="2025-04-14T11:55:14 AEST" duration-ms="17632" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.LoginTest@5dafbe45]" started-at="2025-03-25T12:46:16 AEST" name="initialize" finished-at="2025-03-25T12:46:29 AEST" duration-ms="13243" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.common.product.SearchTest@2af004b]" started-at="2025-04-14T11:55:14 AEST" name="initialize" finished-at="2025-04-14T11:55:19 AEST" duration-ms="5049" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="testValidLogin(com.ecommerce.models.LoginData)[pri:0, instance:com.ecommerce.tests.LoginTest@5dafbe45]" started-at="2025-03-25T12:46:29 AEST" name="testValidLogin" data-provider="loginData" finished-at="2025-03-25T12:46:33 AEST" duration-ms="3859" status="PASS">
+        <test-method signature="testSearchFunctionality(com.ecommerce.models.SearchData)[pri:0, instance:com.ecommerce.tests.common.product.SearchTest@2af004b]" started-at="2025-04-14T11:55:19 AEST" name="testSearchFunctionality" data-provider="searchData" finished-at="2025-04-14T11:55:22 AEST" duration-ms="2740" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.ecommerce.models.LoginData@2577a95d]]>
+                <![CDATA[com.ecommerce.models.SearchData@3db432c2]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected 'nno product found' message is not displayed expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected 'nno product found' message is not displayed expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at com.ecommerce.tests.common.product.SearchTest.testSearchFunctionality(SearchTest.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchFunctionality -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.common.product.SearchTest@2af004b]" started-at="2025-04-14T11:55:22 AEST" name="teardown" finished-at="2025-04-14T11:55:22 AEST" duration-ms="167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.common.product.SearchTest@2af004b]" started-at="2025-04-14T11:55:22 AEST" name="setup" finished-at="2025-04-14T11:55:36 AEST" duration-ms="13381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.common.product.SearchTest@2af004b]" started-at="2025-04-14T11:55:36 AEST" name="initialize" finished-at="2025-04-14T11:55:47 AEST" duration-ms="11355" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="testSearchFunctionality(com.ecommerce.models.SearchData)[pri:0, instance:com.ecommerce.tests.common.product.SearchTest@2af004b]" started-at="2025-04-14T11:55:47 AEST" name="testSearchFunctionality" data-provider="searchData" finished-at="2025-04-14T11:55:58 AEST" duration-ms="10620" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.ecommerce.models.SearchData@5efeb117]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.LoginTest@5dafbe45]" started-at="2025-03-25T12:46:33 AEST" name="teardown" finished-at="2025-03-25T12:46:33 AEST" duration-ms="225" status="PASS">
+        </test-method> <!-- testSearchFunctionality -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.common.product.SearchTest@2af004b]" started-at="2025-04-14T11:55:58 AEST" name="teardown" finished-at="2025-04-14T11:55:58 AEST" duration-ms="306" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.LoginTest@5dafbe45]" started-at="2025-03-25T12:46:33 AEST" name="setup" finished-at="2025-03-25T12:46:52 AEST" duration-ms="19204" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.common.product.SearchTest@2af004b]" started-at="2025-04-14T11:55:58 AEST" name="setup" finished-at="2025-04-14T11:56:12 AEST" duration-ms="13696" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.LoginTest@5dafbe45]" started-at="2025-03-25T12:46:52 AEST" name="initialize" finished-at="2025-03-25T12:47:00 AEST" duration-ms="7280" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.common.product.SearchTest@2af004b]" started-at="2025-04-14T11:56:12 AEST" name="initialize" finished-at="2025-04-14T11:56:18 AEST" duration-ms="6830" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="testValidLogin(com.ecommerce.models.LoginData)[pri:0, instance:com.ecommerce.tests.LoginTest@5dafbe45]" started-at="2025-03-25T12:47:00 AEST" name="testValidLogin" data-provider="loginData" finished-at="2025-03-25T12:47:03 AEST" duration-ms="3322" status="PASS">
+        <test-method signature="testSearchFunctionality(com.ecommerce.models.SearchData)[pri:0, instance:com.ecommerce.tests.common.product.SearchTest@2af004b]" started-at="2025-04-14T11:56:18 AEST" name="testSearchFunctionality" data-provider="searchData" finished-at="2025-04-14T11:56:33 AEST" duration-ms="14541" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.ecommerce.models.LoginData@1c52552f]]>
+                <![CDATA[com.ecommerce.models.SearchData@53eba4b8]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.LoginTest@5dafbe45]" started-at="2025-03-25T12:47:03 AEST" name="teardown" finished-at="2025-03-25T12:47:03 AEST" duration-ms="209" status="PASS">
+        </test-method> <!-- testSearchFunctionality -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.common.product.SearchTest@2af004b]" started-at="2025-04-14T11:56:33 AEST" name="teardown" finished-at="2025-04-14T11:56:33 AEST" duration-ms="289" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.LoginTest@5dafbe45]" started-at="2025-03-25T12:47:03 AEST" name="setup" finished-at="2025-03-25T12:47:27 AEST" duration-ms="23460" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.ecommerce.tests.common.product.SearchTest@2af004b]" started-at="2025-04-14T11:56:33 AEST" name="setup" finished-at="2025-04-14T11:57:01 AEST" duration-ms="27437" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.LoginTest@5dafbe45]" started-at="2025-03-25T12:47:27 AEST" name="initialize" finished-at="2025-03-25T12:47:37 AEST" duration-ms="10009" status="PASS">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.ecommerce.tests.common.product.SearchTest@2af004b]" started-at="2025-04-14T11:57:01 AEST" name="initialize" finished-at="2025-04-14T11:57:14 AEST" duration-ms="12964" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="testValidLogin(com.ecommerce.models.LoginData)[pri:0, instance:com.ecommerce.tests.LoginTest@5dafbe45]" started-at="2025-03-25T12:47:37 AEST" name="testValidLogin" data-provider="loginData" finished-at="2025-03-25T12:47:41 AEST" duration-ms="4105" status="PASS">
+        <test-method signature="testSearchFunctionality(com.ecommerce.models.SearchData)[pri:0, instance:com.ecommerce.tests.common.product.SearchTest@2af004b]" started-at="2025-04-14T11:57:14 AEST" name="testSearchFunctionality" data-provider="searchData" finished-at="2025-04-14T11:57:29 AEST" duration-ms="15095" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.ecommerce.models.LoginData@28157173]]>
+                <![CDATA[com.ecommerce.models.SearchData@26457986]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Expected 'nno product found' message is not displayed expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Expected 'nno product found' message is not displayed expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertTrue(Assert.java:56)
+at com.ecommerce.tests.common.product.SearchTest.testSearchFunctionality(SearchTest.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.LoginTest@5dafbe45]" started-at="2025-03-25T12:47:41 AEST" name="teardown" finished-at="2025-03-25T12:47:41 AEST" duration-ms="246" status="PASS">
+        </test-method> <!-- testSearchFunctionality -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.ecommerce.tests.common.product.SearchTest@2af004b]" started-at="2025-04-14T11:57:29 AEST" name="teardown" finished-at="2025-04-14T11:57:29 AEST" duration-ms="378" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.ecommerce.tests.LoginTest -->
+      </class> <!-- com.ecommerce.tests.common.product.SearchTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

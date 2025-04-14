@@ -1,0 +1,50 @@
+[
+  {
+    "test_case": "valid_exact_match",
+    "description": "Valid exact product name should return the correct product",
+    "search_term": "Blue Top",
+    "expected_product": "Blue Top"
+  },
+  {
+    "test_case": "valid_partial_match",
+    "description": "Partial match should return at least one relevant product",
+    "search_term": "Tshirt",
+    "expected_contains": "Tshirt"
+  },
+  {
+    "test_case": "invalid_product",
+    "description": "Invalid product name should show no result message",
+    "search_term": "Dragon Ball Z",
+    "expected_no_result": true
+  },
+  {
+    "test_case": "empty_input",
+    "description": "Empty search should display all products",
+    "search_term": "",
+    "expect_all_products": true
+  },
+  {
+    "test_case": "special_characters",
+    "description": "Special characters should show no result",
+    "search_term": "@#$%^&*()",
+    "expected_no_result": true
+  },
+  {
+    "test_case": "case_insensitive",
+    "description": "Search should be case-insensitive",
+    "search_term": "blue top",
+    "expected_product": "Blue Top"
+  },
+  {
+    "test_case": "whitespace_handling",
+    "description": "Leading/trailing whitespace should be trimmed",
+    "search_term": "   Blue Top   ",
+    "expected_product": "Blue Top"
+  },
+  {
+    "test_case": "numeric_input",
+    "description": "Numeric only search should show no results",
+    "search_term": "123456",
+    "expected_no_result": true
+  }
+]
