@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ecommerce.tests.common.product.SearchTest">
+      <class name="com.ecommerce.tests.common.cart.CartTest">
         <methods>
           <include name="initialize"/>
-          <include name="testSearchFunctionality" invocation-numbers="2 4 7"/>
+          <include name="testAddMultipleProductsToCart"/>
           <include name="setup"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- com.ecommerce.tests.common.product.SearchTest -->
+      </class> <!-- com.ecommerce.tests.common.cart.CartTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

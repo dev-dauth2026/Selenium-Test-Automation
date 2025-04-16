@@ -1,4 +1,4 @@
-package com.ecommerce.utils;
+package com.ecommerce.tests.common;
 
 import java.io.FileReader;
 import java.util.ArrayList;
@@ -14,6 +14,7 @@ import org.testng.annotations.DataProvider;
 import com.ecommerce.models.LoginData;
 import com.ecommerce.models.SearchData;
 import com.ecommerce.models.SignupData;
+import com.ecommerce.utils.CountryConfigReader;
 
 public class TestDataReader {
 

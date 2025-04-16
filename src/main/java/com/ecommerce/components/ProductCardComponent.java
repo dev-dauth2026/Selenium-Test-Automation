@@ -6,6 +6,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import com.ecommerce.models.ProductCardInfo;
+
 public class ProductCardComponent {
 	private WebDriver driver;
 	
@@ -15,7 +17,7 @@ public class ProductCardComponent {
 	}
 	
 	// Locators
-	private By productCard = By.cssSelector(".product-image-wrapper");
+	public By productCard = By.cssSelector(".product-image-wrapper");
 	private By productImage = By.cssSelector(".productinfo img");
 	private By productName = By.cssSelector(".productinfo p");
 	private By productPrice = By.cssSelector(".productinfo h2");
@@ -27,6 +29,14 @@ public class ProductCardComponent {
 	// Get all product cards
 	public List<WebElement> getAllProductCards(){
 		return driver.findElements(productCard);
+	}
+	
+	public ProductCardInfo getProductInfo(WebElement card) {
+		String name = card.findElement(productName).getText().trim();
+		String price = card.findElement(productPrice).getText().trim();
+		
+		return new ProductCardInfo(name,price);
+		
 	}
 	
 	// Get product name 

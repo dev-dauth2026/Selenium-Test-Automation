@@ -32,6 +32,10 @@ public class BasePage {
         footer = new FooterComponent(driver);
     }
     
+    
+    // Ads locators
+    private By buttonAds = By.cssSelector(".grippy-host");
+    
  // **Reusable Click Method**
     protected void click(By locator) {
         wait.until(ExpectedConditions.elementToBeClickable(locator)).click();
@@ -82,5 +86,26 @@ public class BasePage {
     
     protected boolean isTextPresent(String expectedText) {
     	return driver.getPageSource().contains(expectedText);
+    }
+    
+    // Wait for element to be displayed
+    protected void waitForElementToBeDisplayed(By locator) {
+    	// Wait for modal to be visible
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+    
+    public void closeAds() {
+        try {
+            if (isElementDisplayed(buttonAds) && isElementDisplayed(buttonAds)) {
+                waitForElementToBeDisplayed(buttonAds);
+                driver.findElement(buttonAds).click();
+                System.out.println("Ad closed successfully");
+            } else {
+                System.out.println(" No ad to close or not visible.");
+            }
+        } catch (Exception e) {
+            System.out.println("Failed to close ad (ignored): " + e.getMessage());
+        }
     }
 }

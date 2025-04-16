@@ -8,7 +8,7 @@ import com.ecommerce.models.SearchData;
 import com.ecommerce.pages.HomePage;
 import com.ecommerce.pages.ProductPage;
 import com.ecommerce.tests.base.BaseTest;
-import com.ecommerce.utils.TestDataReader;
+import com.ecommerce.tests.common.TestDataReader;
 
 public class SearchTest extends BaseTest{
 	private HomePage homePage;

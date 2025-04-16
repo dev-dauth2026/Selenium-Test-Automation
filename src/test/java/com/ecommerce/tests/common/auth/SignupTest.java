@@ -16,7 +16,7 @@ import com.ecommerce.pages.AccountCreatedPage;
 import com.ecommerce.pages.LoginPage;
 import com.ecommerce.pages.SignupPage;
 import com.ecommerce.tests.base.BaseTest;
-import com.ecommerce.utils.TestDataReader;
+import com.ecommerce.tests.common.TestDataReader;
 
 public class SignupTest extends BaseTest{
     SignupPage signupPage;

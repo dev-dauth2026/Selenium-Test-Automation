@@ -8,8 +8,8 @@ import org.testng.annotations.Test;
 import com.ecommerce.models.LoginData;
 import com.ecommerce.pages.LoginPage;
 import com.ecommerce.tests.base.BaseTest;
+import com.ecommerce.tests.common.TestDataReader;
 import com.ecommerce.utils.EnvReader;
-import com.ecommerce.utils.TestDataReader;
 
 public class LoginTest extends BaseTest {
     LoginPage loginPage;
