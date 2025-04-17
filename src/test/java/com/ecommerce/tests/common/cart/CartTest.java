@@ -1,5 +1,6 @@
 package com.ecommerce.tests.common.cart;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
@@ -107,50 +108,51 @@ public class CartTest extends BaseTest {
 	public void testAddMultipleProductsToCart() {
 		// Get product card and expected product info
 		List<WebElement> productCards = productPage.getAllProductCards();
-		WebElement firstCard = productCards.get(0);
-		WebElement secondCard = productCards.get(1);
+		int numberOfProductCards = 3;
 		
-		// Extract expected products info
-		ProductCardInfo expectedFirstProductCardInfo = productPage.getProductInfo(firstCard);
-		System.out.println("First selected product name: " + expectedFirstProductCardInfo.getName());
-		ProductCardInfo expectedSecondProductCardInfo = productPage.getProductInfo(secondCard);
-		System.out.println("Second selected product name: " + expectedSecondProductCardInfo.getName());
-		productPage.closeAds();
+		List<ProductCardInfo> expectedProducts = new ArrayList<>();
 		
-		// Add product to cart
-		productPage.clickAddToCart(firstCard);
-		productPage.continueShopping();
-		productPage.clickAddToCart(secondCard);
-		productPage.clickViewCartLink();
+		// Loop product cards
+		for (int i=0; i< numberOfProductCards; i++) {
+			WebElement productCard = productCards.get(i);
+			
+			ProductCardInfo productInfo = productPage.getProductInfo(productCard);
+			expectedProducts.add(productInfo);
+			
+			System.out.println(i+1 + " selected product name: " + productInfo.getName());
+			
+			// Add product to cart
+			if(i == 0) {
+				productPage.closeAds();
+			}
+			productPage.clickAddToCart(productCard);
+			
+			if(i < (numberOfProductCards - 1 )){
+				productPage.continueShopping();
+			}else {
+				productPage.clickViewCartLink();
+			}
+		}
+		
 		cartPage.waitForCartPageToLoad();
 		
-		//Fetch actual products info from cart
-		ProductInCartInfo firstProductInCartInfo = cartPage.getProductInCartInfo(expectedFirstProductCardInfo.getName());
-		ProductInCartInfo secondProductInCartInfo = cartPage.getProductInCartInfo(expectedSecondProductCardInfo.getName());
-		
-		System.out.println("Checking first product is in the cart");
-		Assert.assertTrue(cartPage.isProductInCart(expectedFirstProductCardInfo.getName()),
-				"First product not found in cart: " + expectedFirstProductCardInfo.getName());
-		
-		System.out.println("Checking second product is in the cart");
-		Assert.assertTrue(cartPage.isProductInCart(expectedSecondProductCardInfo.getName()),
-				"Second product not found in cart: " + expectedSecondProductCardInfo.getName());
-		
-		System.out.println("Checking first product price matches with first product price in the cart");
-		Assert.assertEquals(firstProductInCartInfo.getPrice(),expectedFirstProductCardInfo.getPrice(),
-				"Added first product's price didn't match with the first product in the cart");
-		
-		System.out.println("Checking second product price matches with second product price in the cart");
-		Assert.assertEquals(secondProductInCartInfo.getPrice(),expectedSecondProductCardInfo.getPrice(),
-				"Added second product's price didn't match with the first product in the cart");
-		
-		System.out.println("Checking first product total price matches with first product total price in the cart");
-		Assert.assertEquals(firstProductInCartInfo.getTotalPrice(),expectedFirstProductCardInfo.getPrice(),
-				"Added first product total price in cart should be equal to unit price for quantity 1.");
-		
-		System.out.println("Checking second product total price matches with second product total price in the cart");
-		Assert.assertEquals(secondProductInCartInfo.getTotalPrice(),expectedSecondProductCardInfo.getPrice(),
-				"Added second product total price in cart should be equal to unit price for quantity 1.");				
+		// Verify each product in cart
+		for(ProductCardInfo expectedProduct: expectedProducts) {
+			ProductInCartInfo actualProductInCartInfo = cartPage.getProductInCartInfo(expectedProduct.getName());
+			
+			Assert.assertTrue(cartPage.isProductInCart(expectedProduct.getName()),
+					"Product not found in cart: " + expectedProduct.getName());
+			
+			Assert.assertEquals(actualProductInCartInfo.getPrice(), expectedProduct.getPrice(),
+					"Price mismatch for product " + expectedProduct.getName());
+			
+			Assert.assertEquals(actualProductInCartInfo.getQuantity(), 1, 
+					"Quantity mismatch for product " + expectedProduct.getName());
+			
+			Assert.assertEquals(actualProductInCartInfo.getTotalPrice(), expectedProduct.getPrice(),
+					"Total price of the product didn't match it's unit price for quantity 1.");
+		}
+						
 		
 	}
 //	

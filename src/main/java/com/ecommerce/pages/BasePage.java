@@ -96,16 +96,12 @@ public class BasePage {
     }
     
     public void closeAds() {
-        try {
-            if (isElementDisplayed(buttonAds) && isElementDisplayed(buttonAds)) {
-                waitForElementToBeDisplayed(buttonAds);
-                driver.findElement(buttonAds).click();
+            if (isElementDisplayed(buttonAds)) {
+                click(buttonAds);
                 System.out.println("Ad closed successfully");
             } else {
                 System.out.println(" No ad to close or not visible.");
             }
-        } catch (Exception e) {
-            System.out.println("Failed to close ad (ignored): " + e.getMessage());
-        }
+       
     }
 }
