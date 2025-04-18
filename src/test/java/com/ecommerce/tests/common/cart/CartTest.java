@@ -155,10 +155,34 @@ public class CartTest extends BaseTest {
 						
 		
 	}
-//	
-//	@Test
-//	public void testRemoveItemFromCart() {
-//		
-//	}
+	
+	@Test
+	public void testRemoveItemFromCart() {
+		// Navigate to Cart Page via cart nav link
+		productPage.header.clickCart();
+		
+		cartPage.waitForCartPageToLoad();
+		
+		// Get list of all the product rows
+		int totalProductNumber = cartPage.productInCartComponent.getAllProductsNameInCart().size();
+		
+		// Define the product row to select
+		int rowNumberToDelete = totalProductNumber - 1;
+		
+		// Delete the product
+		String deletedProductName = cartPage.productInCartComponent.deleteProduct(rowNumberToDelete);
+		
+		// Total product number in cart after removing a product
+		int totalProductNumberAfterRevoming = cartPage.productInCartComponent.getAllProductsNameInCart().size();
+		
+		// Assert the deleted product name does not appear in the cart
+		Assert.assertFalse(cartPage.isProductInCart(deletedProductName),
+				"Deleted product should not be present in the cart");
+		
+		Assert.assertEquals(totalProductNumber - 1,totalProductNumberAfterRevoming,
+				"Total number of product after removing a product should be less than previous total number in the cart by 1");
+		
+		
+	}
 
 }

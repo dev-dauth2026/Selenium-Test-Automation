@@ -1,5 +1,7 @@
 package com.ecommerce.components;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -42,6 +44,12 @@ public class ProductInCartComponent {
 		
 	}
 	
+	public List<WebElement> getAllProductsNameInCart(){
+		List<WebElement> productListInCart = driver.findElements(cartRows);
+		
+		return productListInCart;
+	}
+	
 //	public String getProductName(int rowIndex) {
 //        return driver.findElements(cartRows).get(rowIndex).findElement(productNameInRow).getText();
 //    }
@@ -58,8 +66,14 @@ public class ProductInCartComponent {
 //        return driver.findElements(cartRows).get(rowIndex).findElement(productTotalInRow).getText();
 //    }
 
-    public void deleteProduct(int rowIndex) {
+    public String deleteProduct(int rowIndex) {
+    	
+		
+		// Grap cart selected product cards and product name  
+    	String deletedProductName = driver.findElements(cartRows).get(rowIndex).findElement(productNameInRow).getText();
         driver.findElements(cartRows).get(rowIndex).findElement(deleteProductIcon).click();
+        
+        return deletedProductName;
     }
 	    
 	    
