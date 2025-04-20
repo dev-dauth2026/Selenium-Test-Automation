@@ -50,6 +50,7 @@ public class ProductInCartComponent {
 		return productListInCart;
 	}
 	
+	
 //	public String getProductName(int rowIndex) {
 //        return driver.findElements(cartRows).get(rowIndex).findElement(productNameInRow).getText();
 //    }
@@ -66,14 +67,21 @@ public class ProductInCartComponent {
 //        return driver.findElements(cartRows).get(rowIndex).findElement(productTotalInRow).getText();
 //    }
 
-    public String deleteProduct(int rowIndex) {
-    	
-		
-		// Grap cart selected product cards and product name  
-    	String deletedProductName = driver.findElements(cartRows).get(rowIndex).findElement(productNameInRow).getText();
-        driver.findElements(cartRows).get(rowIndex).findElement(deleteProductIcon).click();
-        
-        return deletedProductName;
+    public String removProductFromCart(int rowIndex) {
+    	List<WebElement> rows = driver.findElements(cartRows);
+
+        // Defensive check for row index
+        if (rowIndex < 0 || rowIndex >= rows.size()) {
+            throw new IndexOutOfBoundsException("Row index " + rowIndex + " is out of bounds. Total rows: " + rows.size());
+        }
+
+        WebElement row = rows.get(rowIndex);
+        String productName = row.findElement(productNameInRow).getText().trim();
+
+        // Click the delete icon
+        row.findElement(deleteProductIcon).click();
+
+        return productName;
     }
 	    
 	    

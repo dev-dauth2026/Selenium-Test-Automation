@@ -95,6 +95,13 @@ public class BasePage {
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
     
+ // Wait for element to be displayed
+    protected void waitForElementToBeInvisible(By locator) {
+    	// Wait for modal to be visible
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(locator));
+    }
+    
     public void closeAds() {
             if (isElementDisplayed(buttonAds)) {
                 click(buttonAds);

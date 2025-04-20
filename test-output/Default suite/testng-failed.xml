@@ -6,7 +6,7 @@
       <class name="com.ecommerce.tests.common.cart.CartTest">
         <methods>
           <include name="initialize"/>
-          <include name="testAddMultipleProductsToCart"/>
+          <include name="testRemoveItemFromCart"/>
           <include name="setup"/>
           <include name="teardown"/>
         </methods>

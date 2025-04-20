@@ -3,6 +3,7 @@ package com.ecommerce.tests.common.cart;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -158,8 +159,35 @@ public class CartTest extends BaseTest {
 	
 	@Test
 	public void testRemoveItemFromCart() {
-		// Navigate to Cart Page via cart nav link
-		productPage.header.clickCart();
+		int numberOfProductCards = 3;
+		
+		// Get product card and expected product info
+		List<WebElement> productCards = productPage.getAllProductCards();
+		
+		List<ProductCardInfo> expectedProducts = new ArrayList<>();
+		
+		// Loop product cards
+		for (int i=0; i< numberOfProductCards; i++) {
+			WebElement productCard = productCards.get(i);
+			
+			ProductCardInfo productInfo = productPage.getProductInfo(productCard);
+			expectedProducts.add(productInfo);
+			
+			System.out.println(i+1 + " selected product name: " + productInfo.getName());
+			
+			// Add product to cart
+			if(i == 0) {
+				productPage.closeAds();
+			}
+			productPage.clickAddToCart(productCard);
+			
+			if(i < (numberOfProductCards - 1 )){
+				productPage.continueShopping();
+			}else {
+				productPage.clickViewCartLink();
+			}
+		}
+
 		
 		cartPage.waitForCartPageToLoad();
 		
@@ -167,19 +195,27 @@ public class CartTest extends BaseTest {
 		int totalProductNumber = cartPage.productInCartComponent.getAllProductsNameInCart().size();
 		
 		// Define the product row to select
-		int rowNumberToDelete = totalProductNumber - 1;
+		int rowOfProductToRemove = totalProductNumber - 1;
+		
+		WebElement productToDelete = cartPage.productInCartComponent.getAllProductsNameInCart().get(rowOfProductToRemove);
+		
+		productPage.closeAds();
 		
 		// Delete the product
-		String deletedProductName = cartPage.productInCartComponent.deleteProduct(rowNumberToDelete);
+		String removedProductName = cartPage.productInCartComponent.removProductFromCart(rowOfProductToRemove);
+		
+		// Wait for the product to disappear
+		By removedProductLocator = cartPage.getLocatorOfRemovedProduct(productToDelete);
+		cartPage.waitForRemovedProductInvisible(removedProductLocator);
 		
 		// Total product number in cart after removing a product
-		int totalProductNumberAfterRevoming = cartPage.productInCartComponent.getAllProductsNameInCart().size();
+		int totalProductNumberAfterRemoving = cartPage.productInCartComponent.getAllProductsNameInCart().size();
 		
 		// Assert the deleted product name does not appear in the cart
-		Assert.assertFalse(cartPage.isProductInCart(deletedProductName),
+		Assert.assertFalse(cartPage.isProductInCart(removedProductName),
 				"Deleted product should not be present in the cart");
 		
-		Assert.assertEquals(totalProductNumber - 1,totalProductNumberAfterRevoming,
+		Assert.assertEquals(totalProductNumber - 1,totalProductNumberAfterRemoving,
 				"Total number of product after removing a product should be less than previous total number in the cart by 1");
 		
 		

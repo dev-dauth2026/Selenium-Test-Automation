@@ -24,7 +24,7 @@ public class CartPage extends BasePage {
 	
 	// Products in the cart
 	private By cartTable = By.id("cart_info_table");
-	private By cartRows = By.xpath("//table[@id='cart_info_table']//tbody/tr");
+	public By cartRows = By.xpath("//table[@id='cart_info_table']//tbody/tr");
 	
 
     private By checkoutButton = By.cssSelector(".check_out");
@@ -84,6 +84,15 @@ public class CartPage extends BasePage {
 	
 	public void waitForCartPageToLoad() {
 		waitForElementToBeDisplayed(productInCartComponent.productNameInRow);
+	}
+	
+	public By getLocatorOfRemovedProduct(WebElement removedProduct) {
+	    String id = removedProduct.getAttribute("id"); 
+	    return By.id(id);
+	}
+	
+	public void waitForRemovedProductInvisible(By locator) {
+		waitForElementToBeInvisible(locator);
 	}
 	
 }	
