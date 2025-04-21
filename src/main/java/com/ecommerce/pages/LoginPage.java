@@ -38,16 +38,22 @@ public class LoginPage extends BasePage {
 		this.driver.get(ConfigReader.getProperty("base_url")+"/login");
 	}
     //  Login Actions
-    public void enterLoginEmail(String email) {
-        type(loginEmailField, email);
-    }
-
-    public void enterLoginPassword(String password) {
-        type(loginPasswordField, password);
-    }
-
-    public void clickLogin() {
-        click(loginButton);
+//    public void enterLoginEmail(String email) {
+//        type(loginEmailField, email);
+//    }
+//
+//    public void enterLoginPassword(String password) {
+//        type(loginPasswordField, password);
+//    }
+//
+//    public void clickLogin() {
+//        click(loginButton);
+//    }
+    
+    public void login(String email, String password) {
+    	type(loginEmailField, email);
+    	type(loginPasswordField, password);
+    	click(loginButton);
     }
     
 
