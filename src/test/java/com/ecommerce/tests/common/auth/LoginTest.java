@@ -29,9 +29,7 @@ public class LoginTest extends BaseTest {
     @Test(dataProvider = "loginData", dataProviderClass = TestDataReader.class)
     public void testValidLogin(LoginData loginData) {
     	
-    	loginPage.enterLoginEmail(loginData.getEmail());
-        loginPage.enterLoginPassword(loginData.getPassword());
-        loginPage.clickLogin();
+        loginPage.login(loginData.getEmail(),loginData.getPassword());
 
         switch (loginData.getExpected_result().toLowerCase()) {
             case "success":
